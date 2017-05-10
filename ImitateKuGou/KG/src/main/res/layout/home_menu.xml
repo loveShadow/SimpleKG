@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/fhd_180">
+    <!--顶部布局-->
+    <include
+        android:id="@+id/home_menu_top"
+        layout="@layout/home_menu_top"
+        android:layout_width="@dimen/fhd_800"
+        android:layout_height="@dimen/fhd_240"
+        android:layout_marginLeft="@dimen/fhd_51"
+        android:layout_marginTop="@dimen/fhd_60" />
+
+    <View
+        android:id="@+id/intervalView_1"
+        android:layout_width="@dimen/fhd_800"
+        android:layout_height="@dimen/fhd_2"
+        android:layout_alignLeft="@id/home_menu_top"
+        android:layout_below="@id/home_menu_top"
+        android:background="@color/home_menu_interval_line" />
+    <!--底部-->
+    <include
+        android:id="@+id/home_menu_bottom"
+        layout="@layout/home_menu_bottom"
+        android:layout_width="@dimen/fhd_700"
+        android:layout_height="@dimen/fhd_210"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/fhd_90" />
+
+    <View
+        android:id="@+id/intervalView_2"
+        android:layout_width="@dimen/fhd_800"
+        android:layout_height="@dimen/fhd_2"
+        android:layout_above="@id/home_menu_bottom"
+        android:layout_alignLeft="@id/home_menu_bottom"
+        android:background="@color/home_menu_interval_line" />
+    <!--中间-->
+    <include
+        android:id="@+id/home_menu_center"
+        layout="@layout/home_menu_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/intervalView_2"
+        android:layout_below="@id/intervalView_1" />
+</RelativeLayout>

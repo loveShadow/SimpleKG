@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--播放列表-->
+    <!-- scrollbars 设置滚动条 -->
+    <com.sample.kg.views.common.PageScrollView
+        android:id="@+id/playListScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bottom_play_list_bg"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/playListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+    </com.sample.kg.views.common.PageScrollView>
+    <!--底部点-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/fhd_30"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/playlist_first_point"
+            android:layout_width="@dimen/fhd_18"
+            android:layout_height="@dimen/fhd_18"
+            android:background="@drawable/playlist_bottom_selected_point" />
+
+        <View
+            android:id="@+id/playlist_second_point"
+            android:layout_width="@dimen/fhd_18"
+            android:layout_height="@dimen/fhd_18"
+            android:layout_marginLeft="@dimen/fhd_18"
+            android:background="@drawable/playlist_bottom_normal_point" />
+    </LinearLayout>
+</RelativeLayout>

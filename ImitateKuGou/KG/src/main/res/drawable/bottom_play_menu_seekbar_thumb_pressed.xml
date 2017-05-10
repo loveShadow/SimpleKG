@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size
+        android:width="@dimen/fhd_56"
+        android:height="@dimen/fhd_56"></size>
+    <stroke
+        android:width="@dimen/fhd_15"
+        android:color="#00FFFFFF"></stroke>
+    <solid android:color="@color/bottom_play_menu_seekbar_thumb"/>
+</shape>

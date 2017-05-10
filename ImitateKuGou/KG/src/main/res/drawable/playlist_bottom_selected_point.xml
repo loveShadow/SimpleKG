@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size android:height="@dimen/fhd_18"
+        android:width="@dimen/fhd_18"/>
+    <solid android:color="@color/playlist_bottom_point_selected"/>
+    <corners android:radius="@dimen/fhd_18"/>
+</shape>

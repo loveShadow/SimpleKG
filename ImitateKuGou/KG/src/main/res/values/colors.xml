@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <!--首页菜单-->
+    <color name="home_menu_interval_line">#1266B4</color>
+    <color name="home_menu_center_btn">#FDFDFE</color>
+    <color name="home_menu_bottom_btn">#9CB5C9</color>
+    <color name="home_menu_bottom_checkbox_bg">#2298EC</color>
+    <color name="home_menu_center_info_text">#98AECE</color>
+    <color name="home_menu_center_btn_selected">#13CDCDCD</color>
+    <color name="home_menu_user_name">#FDFDFE</color>
+
+    <!--首页主页面-->
+    <color name="home_center_playlist_cover">#55000000</color>
+
+    <!--底部播放菜单-->
+    <color name="bottom_play_menu_seekbar_thumb">#51CBFE</color>
+    <color name="bottom_play_menu_song_name">#000000</color>
+    <color name="bottom_play_menu_singer_name">#686868</color>
+    <color name="bottom_play_menu_progress_normal_bg">#88D7D7D7</color>
+    <color name="bottom_play_menu_progress_second_bg">#D7D7D7</color>
+    <color name="bottom_play_menu_progress_bg">#51CBFE</color>
+
+    <!--底部播放列表-->
+    <color name="bottom_play_list_bg">#F3F3F3</color>
+    <color name="playlist_bottom_point_selected">#929292</color>
+    <color name="playlist_bottom_point_normal">#C7C7C7</color>
+    <color name="playlist_select_text">#1E87D3</color>
+    <color name="playlist_normal_song_id_text">#000000</color>
+    <color name="playlist_normal_song_text">#000000</color>
+    <color name="playlist_normal_singer_text">#878787</color>
+    <color name="bottom_play_list_interval_line">#D1D1D1</color>
+
+    <!--播放列表-->
+    <color name="playlist_item_selected">#33888888</color>
+    <color name="playlist_item_moving">#88888888</color>
+
+    <!--听-分割线-->
+    <color name="head_ting_interval_line">#325EBC</color>
+    <color name="head_ting_local_music_count">#9DB6E0</color>
+    <color name="head_ting_interval_line_2">#DBDBDB</color>
+
+    <!--听-菜单文本选中颜色-->
+    <!--我喜欢、歌单、下载、最近-->
+    <color name="head_ting_menu_text_selected">#5180D2</color>
+    <!--乐库、电台、酷群-->
+    <color name="head_ting_menu2_text_selected">#1E87D3</color>
+    <!--工具、推广选中背景颜色-->
+    <color name="head_ting_tool_item_selected_bg">#22000000</color>
+
+    <!--看、唱-背景-->
+    <color name="head_kan_chang_head_bg">#008FFE</color>
+</resources>

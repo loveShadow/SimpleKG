@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/menu_center_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <!--消息中心-->
+        <include
+            android:id="@+id/message_center"
+            layout="@layout/home_menu_center_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_150" />
+
+        <!--皮肤中心-->
+        <include
+            android:id="@+id/skin_center"
+            layout="@layout/home_menu_center_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_150" />
+
+        <!--会员中心-->
+        <include
+            android:id="@+id/member_center"
+            layout="@layout/home_menu_center_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_150" />
+
+        <!--定时关闭-->
+        <include
+            android:id="@+id/timed_off"
+            layout="@layout/home_menu_center_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_150" />
+
+        <!--蝰蛇音效-->
+        <include
+            android:id="@+id/sound_effects"
+            layout="@layout/home_menu_center_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_150" />
+
+        <!--听歌识曲-->
+        <include
+            android:id="@+id/discern_song"
+            layout="@layout/home_menu_center_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_150" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/intervalView"
+        android:layout_width="@dimen/fhd_800"
+        android:layout_height="@dimen/fhd_2"
+        android:layout_below="@id/menu_center_top"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/fhd_90"
+        android:layout_marginTop="@dimen/fhd_30"
+        android:background="@color/home_menu_interval_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/intervalView"
+        android:layout_marginLeft="@dimen/fhd_90"
+        android:layout_marginRight="@dimen/fhd_90"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <!--仅Wifi联网-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/fhd_50"
+                android:gravity="center_vertical"
+                android:textColor="@color/home_menu_center_btn"
+                android:textSize="@dimen/fhd_46"
+                android:text="@string/home_menu_bottom_only_wifi"
+                android:drawableLeft="@drawable/home_menu_center_only_wifi_connect_network"/>
+
+            <com.sample.kg.views.common.CheckBoxView
+                android:id="@+id/only_wifi_connect_network"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fhd_6" />
+        </RelativeLayout>
+        <!--桌面歌词-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/fhd_50"
+                android:gravity="center_vertical"
+                android:textColor="@color/home_menu_center_btn"
+                android:textSize="@dimen/fhd_46"
+                android:text="@string/home_menu_bottom_desktop_lyrics"
+                android:drawableLeft="@drawable/home_menu_center_desktop_lyrics"/>
+
+            <com.sample.kg.views.common.CheckBoxView
+                android:id="@+id/desktop_lyrics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fhd_6" />
+        </RelativeLayout>
+        <!--锁屏歌词-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/fhd_50"
+                android:gravity="center_vertical"
+                android:textColor="@color/home_menu_center_btn"
+                android:textSize="@dimen/fhd_46"
+                android:text="@string/home_menu_bottom_lock_screen_lyrics"
+                android:drawableLeft="@drawable/home_menu_center_lock_screen_lyrics"/>
+
+            <com.sample.kg.views.common.CheckBoxView
+                android:id="@+id/lock_screen_lyrics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fhd_6" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

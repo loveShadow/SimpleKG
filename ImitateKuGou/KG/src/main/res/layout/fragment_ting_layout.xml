@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--背景-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ting_fragment_head_bg_1" />
+
+    <!--背景-->
+    <ImageView
+        android:id="@+id/ting_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_192"
+        android:alpha="0"
+        android:background="@color/head_kan_chang_head_bg" />
+
+    <LinearLayout
+        android:id="@+id/top_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_483"
+        android:layout_below="@+id/ting_top_bg"
+        android:background="@drawable/ting_fragment_head_bg_2"
+        android:orientation="vertical">
+
+        <!--我喜欢、歌单、下载、最近-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_270"
+            android:layout_margin="@dimen/fhd_18"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/myLoveBtn"
+                android:layout_width="@dimen/fhd_150"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/head_navigation_fav_btn_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/head_ting_fav"
+                android:textColor="@color/head_ting_menu_text_selector" />
+
+            <TextView
+                android:id="@+id/songListBtn"
+                android:layout_width="@dimen/fhd_150"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/head_navigation_playlist_btn_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/head_ting_playlist"
+                android:textColor="@color/head_ting_menu_text_selector" />
+
+            <TextView
+                android:id="@+id/downloadBtn"
+                android:layout_width="@dimen/fhd_150"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/head_navigation_download_btn_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/head_ting_download"
+                android:textColor="@color/head_ting_menu_text_selector" />
+
+            <TextView
+                android:id="@+id/recentBtn"
+                android:layout_width="@dimen/fhd_150"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/head_navigation_recent_btn_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/head_ting_recent"
+                android:textColor="@color/head_ting_menu_text_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_2"
+            android:layout_marginLeft="@dimen/fhd_39"
+            android:layout_marginRight="@dimen/fhd_39"
+            android:background="@color/head_ting_interval_line" />
+
+        <!--本地音乐-->
+        <RelativeLayout
+            android:id="@+id/localSongBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/head_ting_tool_btn_selector"
+            android:clickable="true"
+            android:paddingBottom="@dimen/fhd_39"
+            android:paddingTop="@dimen/fhd_39">
+
+            <ImageView
+                android:layout_width="@dimen/fhd_45"
+                android:layout_height="@dimen/fhd_75"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/fhd_72"
+                android:background="@drawable/head_navigation_local_music_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/fhd_165"
+                android:text="@string/head_ting_local_music"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/fhd_405"
+                android:text="55首"
+                android:textColor="@color/head_ting_local_music_count" />
+
+            <Button
+                android:layout_width="@dimen/fhd_75"
+                android:layout_height="@dimen/fhd_75"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/fhd_45"
+                android:background="@drawable/head_navigation_random_btn_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_menu_layout"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <!--乐库、电台、酷群-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_360"
+            android:layout_marginLeft="@dimen/fhd_39"
+            android:layout_marginRight="@dimen/fhd_39"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/yueKuBtn"
+                android:layout_width="@dimen/fhd_174"
+                android:layout_height="@dimen/fhd_268"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawablePadding="@dimen/fhd_25"
+                android:drawableTop="@drawable/head_navigation_yueku_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/head_ting_yueku"
+                android:textColor="@color/head_ting_menu2_text_selector"
+                android:textSize="@dimen/fhd_48" />
+
+            <TextView
+                android:id="@+id/channelBtn"
+                android:layout_width="@dimen/fhd_174"
+                android:layout_height="@dimen/fhd_268"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawablePadding="@dimen/fhd_25"
+                android:drawableTop="@drawable/head_navigation_channel_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/head_ting_channel"
+                android:textColor="@color/head_ting_menu2_text_selector"
+                android:textSize="@dimen/fhd_48" />
+
+            <TextView
+                android:id="@+id/kuQunBtn"
+                android:layout_width="@dimen/fhd_174"
+                android:layout_height="@dimen/fhd_268"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawablePadding="@dimen/fhd_25"
+                android:drawableTop="@drawable/head_navigation_kuchat_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/head_ting_kuChat"
+                android:textColor="@color/head_ting_menu2_text_selector"
+                android:textSize="@dimen/fhd_48" />
+        </LinearLayout>
+
+        <!--工具及推广-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fhd_2"
+                android:layout_marginLeft="@dimen/fhd_39"
+                android:layout_marginRight="@dimen/fhd_39"
+                android:background="@color/head_ting_interval_line_2" />
+            <!--工具-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fhd_144"
+                android:background="@drawable/head_ting_tool_btn_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fhd_60"
+                    android:drawableLeft="@drawable/head_navigation_tool"
+                    android:drawablePadding="@dimen/fhd_20"
+                    android:gravity="center_vertical"
+                    android:text="@string/head_ting_tool"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fhd_42" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fhd_2"
+                android:layout_marginLeft="@dimen/fhd_39"
+                android:layout_marginRight="@dimen/fhd_39"
+                android:background="@color/head_ting_interval_line_2" />
+            <!--推广-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fhd_144"
+                android:background="@drawable/head_ting_tool_btn_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fhd_60"
+                    android:drawableLeft="@drawable/head_navigation_spread"
+                    android:drawablePadding="@dimen/fhd_20"
+                    android:gravity="center_vertical"
+                    android:text="@string/head_ting_spread"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fhd_42" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fhd_2"
+                android:layout_marginLeft="@dimen/fhd_39"
+                android:layout_marginRight="@dimen/fhd_39"
+                android:background="@color/head_ting_interval_line_2" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><!--现在的播放列表-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--操作栏-->
+    <RelativeLayout
+        android:id="@+id/curPlayMenuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_150">
+        <!--播放队列-->
+        <TextView
+            android:id="@+id/curPlayListTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fhd_36"
+            android:text="@string/bottom_playlist_cur_playlist"
+            android:textColor="@color/playlist_select_text"
+            android:textSize="@dimen/fhd_48" />
+
+        <TextView
+            android:id="@+id/curPlayListCountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fhd_30"
+            android:layout_toRightOf="@id/curPlayListTextView"
+            android:text="20"
+            android:textColor="@color/playlist_select_text"
+            android:textSize="@dimen/fhd_40" />
+        <!---操作栏-->
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/curPlayListCountView"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+            <!--分享-->
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="@dimen/fhd_72"
+                android:layout_height="@dimen/fhd_72"
+                android:layout_margin="@dimen/fhd_39"
+                android:background="@drawable/bottom_playlist_menu_share_selector"/>
+
+            <View
+                android:layout_width="@dimen/fhd_2"
+                android:layout_height="@dimen/fhd_60"
+                android:background="@color/bottom_play_list_interval_line"/>
+            <!--添加到歌单-->
+            <Button
+                android:id="@+id/addToListBtn"
+                android:layout_width="@dimen/fhd_72"
+                android:layout_height="@dimen/fhd_72"
+                android:layout_margin="@dimen/fhd_39"
+                android:background="@drawable/bottom_playlist_menu_add_selector"/>
+
+            <View
+                android:layout_width="@dimen/fhd_2"
+                android:layout_height="@dimen/fhd_60"
+                android:background="@color/bottom_play_list_interval_line"/>
+            <!--播放形式-->
+            <Button
+                android:id="@+id/playModeBtn"
+                android:layout_width="@dimen/fhd_72"
+                android:layout_height="@dimen/fhd_72"
+                android:layout_margin="@dimen/fhd_39"
+                android:background="@drawable/bottom_playlist_menu_order_selector"/>
+
+            <View
+                android:layout_width="@dimen/fhd_2"
+                android:layout_height="@dimen/fhd_60"
+                android:background="@color/bottom_play_list_interval_line"/>
+            <!--删除-->
+            <Button
+                android:id="@+id/clearListBtn"
+                android:layout_width="@dimen/fhd_72"
+                android:layout_height="@dimen/fhd_72"
+                android:layout_margin="@dimen/fhd_39"
+                android:background="@drawable/bottom_playlist_menu_delete_selector"/>
+        </LinearLayout>
+
+        <!--完成移动-->
+        <Button
+            android:id="@+id/moveOverBtn"
+            android:layout_width="@dimen/fhd_150"
+            android:layout_height="@dimen/fhd_150"
+            android:text="@string/bottom_playlist_move_over"
+            android:textSize="@dimen/fhd_48"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorTransparent"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_2"
+        android:layout_below="@id/curPlayMenuLayout"
+        android:background="@color/bottom_play_list_interval_line"/>
+    <!--播放列表-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/curPlayListView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_700"
+        android:layout_marginTop="@dimen/fhd_2"
+        android:layout_below="@id/curPlayMenuLayout" />
+</RelativeLayout>

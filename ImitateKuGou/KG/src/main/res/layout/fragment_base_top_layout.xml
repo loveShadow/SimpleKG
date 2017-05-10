@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_195"
+        android:background="@color/head_kan_chang_head_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/toolbar_padding_top">
+            <!--返回按钮-->
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/fhd_120"
+                android:layout_height="@dimen/fhd_135"
+                android:layout_centerVertical="true"
+                android:background="@color/colorTransparent"
+                android:src="@drawable/fragment_base_top_back_selector"
+                android:scaleX="1.5"
+                android:scaleY="1.5"/>
+            <!--标题-->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fhd_48" />
+            <!--菜单-->
+            <LinearLayout
+                android:id="@+id/menuLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <!--右移菜单-->
+            <ImageButton
+                android:id="@+id/menuBtn"
+                android:layout_width="@dimen/fhd_120"
+                android:layout_height="@dimen/fhd_135"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorTransparent"
+                android:src="@drawable/fragment_base_top_menu_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

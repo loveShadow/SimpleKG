@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!--上一次的播放列表-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--操作栏-->
+    <RelativeLayout
+        android:id="@+id/lastPlayMenuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_150">
+        <!--播放队列-->
+        <TextView
+            android:id="@+id/lastPlayListTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fhd_36"
+            android:text="@string/bottom_playlist_last_playlist"
+            android:textColor="@color/playlist_select_text"
+            android:textSize="@dimen/fhd_48" />
+
+        <TextView
+            android:id="@+id/lastPlayListCountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fhd_30"
+            android:layout_toRightOf="@id/lastPlayListTextView"
+            android:text="20"
+            android:textColor="@color/playlist_select_text"
+            android:textSize="@dimen/fhd_40" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_2"
+        android:background="@color/bottom_play_list_interval_line"/>
+    <!--播放列表-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lastPlayListView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_700"
+        android:layout_marginTop="@dimen/fhd_2"
+        android:layout_below="@id/lastPlayMenuLayout" />
+</LinearLayout>

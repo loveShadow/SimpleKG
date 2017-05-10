@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?><!--底部播放条布局-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent">
+    <!--播放列表-->
+    <ViewStub
+        android:id="@+id/playListStubLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/fhd_165"
+        android:layout_marginTop="@dimen/fhd_825"
+        android:visibility="gone"
+        android:layout="@layout/bottom_playlist_view_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_228"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_play_menu_bg"
+        android:orientation="horizontal">
+        <!--歌曲头像-->
+        <FrameLayout
+            android:layout_width="@dimen/fhd_228"
+            android:layout_height="@dimen/fhd_228"
+            android:background="@drawable/bottom_player_song_head_bg" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/songHeadImage"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/fhd_175"
+                android:layout_height="@dimen/fhd_175"
+                android:padding="@dimen/fhd_15"
+                android:src="@drawable/home" />
+        </FrameLayout>
+        <!--右边歌曲信息-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fhd_165"
+            android:layout_marginTop="@dimen/fhd_63">
+
+            <LinearLayout
+                android:id="@+id/playSeekBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fhd_56"
+                android:gravity="center_vertical">
+
+                <SeekBar
+                    android:id="@+id/playSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/fhd_5"
+                    android:minHeight="@dimen/fhd_5"
+                    android:layout_marginLeft="@dimen/fhd_n20"
+                    android:progressDrawable="@drawable/bottom_play_menu_seekbar_progress_layer"
+                    android:thumb="@drawable/bottom_play_menu_seekbar_thumb_selector"
+                    android:thumbOffset="@dimen/fhd_20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/playSeekBarLayout"
+                android:orientation="vertical">
+                <!--歌曲名-->
+                <TextView
+                    android:id="@+id/songNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fhd_30"
+                    android:text="稳稳地幸福"
+                    android:textColor="@color/bottom_play_menu_song_name"
+                    android:textSize="@dimen/fhd_40" />
+                <!--歌手名-->
+                <TextView
+                    android:id="@+id/singerNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fhd_30"
+                    android:text="张丽、张怡"
+                    android:textColor="@color/bottom_play_menu_singer_name"
+                    android:textSize="@dimen/fhd_36" />
+            </LinearLayout>
+            <!--播放操作按钮列表-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/playSeekBarLayout"
+                android:layout_marginBottom="@dimen/fhd_11"
+                android:layout_marginRight="@dimen/fhd_11"
+                android:orientation="horizontal">
+                <!--播放暂停-->
+                <Button
+                    android:id="@+id/playOrPauseBtn"
+                    android:layout_width="@dimen/fhd_100"
+                    android:layout_height="@dimen/fhd_100"
+                    android:background="@drawable/bottom_play_menu_play_btn_selector" />
+                <!--下一首-->
+                <Button
+                    android:id="@+id/nextSongBtn"
+                    android:layout_width="@dimen/fhd_100"
+                    android:layout_height="@dimen/fhd_100"
+                    android:background="@drawable/bottom_play_menu_nextsong_btn_selector" />
+                <!--播放列表-->
+                <Button
+                    android:id="@+id/playListBtn"
+                    android:layout_width="@dimen/fhd_100"
+                    android:layout_height="@dimen/fhd_100"
+                    android:background="@drawable/bottom_play_menu_playlist_btn_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

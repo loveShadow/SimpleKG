@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fhd_150"
+    android:clickable="true"
+    android:background="@drawable/bottom_playlist_item_selected">
+
+    <TextView
+        android:id="@+id/songId"
+        android:layout_width="@dimen/fhd_150"
+        android:layout_height="@dimen/fhd_150"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/playlist_normal_song_id_text"/>
+
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/fhd_50"
+        android:layout_toRightOf="@id/songId">
+        <!--歌曲名称-->
+        <TextView
+            android:id="@+id/songNameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fhd_48"
+            android:textColor="@color/playlist_normal_song_text"
+            android:lines="1"/>
+        <!--歌手名-->
+        <TextView
+            android:id="@+id/singerNameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fhd_36"
+            android:textColor="@color/playlist_normal_singer_text"
+            android:lines="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fhd_2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/fhd_150"
+        android:background="@color/bottom_play_list_interval_line" />
+</RelativeLayout>

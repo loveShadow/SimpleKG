@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">ImitateKuGou</string>
+
+    <!--首页菜单-->
+    <string name="home_menu_bottom_setting">设置</string>
+    <string name="home_menu_bottom_quit">退出</string>
+
+    <string name="home_menu_center_message_center">消息中心</string>
+    <string name="home_menu_center_skin_center">皮肤中心</string>
+    <string name="home_menu_center_member_center">会员中心</string>
+    <string name="home_menu_center_timed_off">定时关闭</string>
+    <string name="home_menu_center_sound_effects">蝰蛇音效</string>
+    <string name="home_menu_center_discern_song">听歌识曲</string>
+
+    <string name="home_menu_bottom_only_wifi">仅WIFI联网</string>
+    <string name="home_menu_bottom_desktop_lyrics">桌面歌词</string>
+    <string name="home_menu_bottom_lock_screen_lyrics">锁屏歌词</string>
+
+    <!--底部播放列表-->
+    <string name="bottom_playlist_cur_playlist">播放队列</string>
+    <string name="bottom_playlist_last_playlist">上次播放队列</string>
+    <string name="bottom_playlist_move_over">完成</string>
+    
+    <!--首页-听-->
+    <string name="head_ting_fav">我喜欢</string>
+    <string name="head_ting_playlist">歌单</string>
+    <string name="head_ting_download">下载</string>
+    <string name="head_ting_recent">最近</string>
+
+    <string name="head_ting_yueku">乐库</string>
+    <string name="head_ting_channel">电台</string>
+    <string name="head_ting_kuChat">酷群</string>
+
+    <!--首页-听-Fragment Title-->
+    <string name="head_ting_fav_title">我喜欢</string>
+    <string name="head_ting_playlist_title">我的歌单</string>
+    <string name="head_ting_download_title">下载管理</string>
+    <string name="head_ting_recent_title">最近播放</string>
+    <string name="head_ting_local_song_title">本地音乐</string>
+    <string name="head_ting_yueku_title">乐库</string>
+    <string name="head_ting_channel_title">电台</string>
+    <string name="head_ting_kuChat_title">酷群</string>
+
+    <string name="head_ting_tool">工具</string>
+    <string name="head_ting_spread">推广</string>
+
+    <string name="head_ting_local_music">本地音乐</string>
+</resources>
